@@ -16,7 +16,7 @@ export default {
     }
   },
   methods: {
-    init: function() {
+    init() {
       const container = document.getElementById('container');
 
       this.camera = new Three.PerspectiveCamera(70, container.clientWidth/container.clientHeight, 0.01, 10);
@@ -34,7 +34,7 @@ export default {
       this.renderer.setSize(container.clientWidth, container.clientHeight);
       container.appendChild(this.renderer.domElement);
     },
-    animate: function() {
+    animate() {
       requestAnimationFrame(this.animate);
       this.mesh.rotation.x += 0.01;
       this.mesh.rotation.y += 0.02;

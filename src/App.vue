@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <h1>ThreeJS:</h1>
-    <Scene2 />
+    <Scene3 />
   </div>
 </template>
 
 <script>
-import Scene2 from './components/Scene2';
+import Scene3 from './components/Scene3';
 
 export default {
   name: 'app',
   components: {
-    Scene2
+    Scene3
   }
 }
 </script>
